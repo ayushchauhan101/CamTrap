@@ -1,18 +1,13 @@
+import Top from './footerComps/Top.jsx'
+import Bottom from './footerComps/Bottom.jsx'
+
 export default function Footer() {
 	return (
-		<footer>
-			<div>
-				<h3>Github</h3>
-			</div>
-			<div>
-				<h3>react</h3>
-				<h3>tailwindcss</h3>
-				<h3>vite</h3>
-				<h3>framer motion</h3>
-			</div>
-			<div>
-				<h3>Cloudfare pages</h3>
-				<h3>Git</h3>
+		<footer className="bg-white dark:bg-gray-900">
+			<div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+				<Top />
+				<hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+				<Bottom />
 			</div>
 		</footer>
 	)
