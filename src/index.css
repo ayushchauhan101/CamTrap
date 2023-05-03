@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	img {
+		@apply h-auto max-w-full rounded-lg;
+	}
+	header {
+		@apply capitalize flex flex-col items-center md:flex-row justify-between;
+	}
+	footer {
+		@apply font-bold capitalize flex flex-row justify-around;
+	}
+}
+
+@layer components {
+	.website {
+		@apply bg-blue-200;
+	}
+	.body {
+		@apply max-w-6xl mx-auto p-4 bg-slate-50 rounded-md;
+	}
+	.gallery {
+		@apply grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8 xl:grid-cols-4 xl:gap-10;
+	}
+	.card {
+		@apply p-2 rounded-lg;
+	}
+}
