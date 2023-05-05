@@ -8,7 +8,7 @@ const navigation = [
 	{ name: "Contact", href: "#", current: false },
 ]
 
-const myTransition = { duration: 2, yoyo: Infinity, ease: "easeInOut" }
+const myTransition = { duration: 3, yoyo: Infinity, ease: "easeInOut" }
 
 function classNames(...classes) {
 	return classes.filter(Boolean).join(" ")
@@ -43,7 +43,7 @@ export default function Example() {
 										viewBox="0 0 24 24"
 										strokeWidth={1.5}
 										stroke="currentColor"
-										className="w-10 h-10 stroke-2 stroke-white hover:stroke-1"
+										className="w-10 h-10 stroke-white"
 									>
 										<motion.path
 											initial={{ pathLength: 0 }}
