@@ -19,7 +19,12 @@ export default function Example() {
 		<Disclosure as="nav" className="bg-gray-800">
 			{({ open }) => (
 				<>
-					<div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+					<motion.div
+						initial={{ scale: 0, y: -200 }}
+						animate={{ scale: 1, y: 0 }}
+						transition={{ type: "spring", ease: "linear", duration: 1 }}
+						className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8"
+					>
 						<div className="relative flex h-16 items-center justify-between">
 							<div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
 								{/* Mobile menu button*/}
@@ -79,10 +84,21 @@ export default function Example() {
 								</div>
 							</div>
 						</div>
-					</div>
+					</motion.div>
 
 					<Disclosure.Panel className="sm:hidden">
-						<div className="space-y-1 px-2 pb-3 pt-2">
+						<motion.div
+							initial={{ opacity: 0, x: -200 }}
+							animate={{ opacity: 1, x: 0 }}
+							transition={{
+								type: "spring",
+								ease: "easeInOut",
+								damping: 10,
+								stiffness: 100,
+								duration: 0.2,
+							}}
+							className="space-y-1 px-2 pb-3 pt-2"
+						>
 							{navigation.map((item) => (
 								<Disclosure.Button
 									key={item.name}
@@ -99,7 +115,7 @@ export default function Example() {
 									{item.name}
 								</Disclosure.Button>
 							))}
-						</div>
+						</motion.div>
 					</Disclosure.Panel>
 				</>
 			)}

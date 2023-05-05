@@ -5,9 +5,9 @@ function PrintImage() {
 	return images.map((image, i) => (
 		<motion.div
 			key={i}
-			initial={{ opacity: 0,scale:0}}
-			animate={{ opacity: 1,scale:1}}
-			transition={{delay:0.2 + i, type:"tween", ease:"easeIn"}}
+			initial={{ opacity: 0, scale: 0 }}
+			animate={{ opacity: 1, scale: 1 }}
+			transition={{ delay: i * 0.5, type: "spring", ease: "easeInOut", stiffness:40 }}
 		>
 			<motion.img src={image.link} alt={image.link} />
 		</motion.div>

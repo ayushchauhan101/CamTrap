@@ -8,6 +8,8 @@ const images = [
     {link: "https://th.bing.com/th/id/OIG.FBmwZAzOfUu52EkXRjKF?w=270&h=270&c=6&r=0&o=5&dpr=1.5&pid=ImgGn"},
     {link: "https://th.bing.com/th/id/OIG.spYGUUbftMLKO.mSvP0i?w=270&h=270&c=6&r=0&o=5&dpr=1.5&pid=ImgGn"},
     {link: "https://th.bing.com/th/id/OIG.KLD.QVJey6mRNTA4T997?w=270&h=270&c=6&r=0&o=5&dpr=1.5&pid=ImgGn"},
+    {link: "https://th.bing.com/th/id/OIG.HHVcJWxVazsFppqj7vT4?pid=ImgGn"},
+    {link:"https://th.bing.com/th/id/OIG.EK.CrVRpl6vnljbwdAFi?pid=ImgGn"},
 
 ]
 
