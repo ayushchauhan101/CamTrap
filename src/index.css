@@ -13,7 +13,6 @@
 
 @layer components {
 	.website {
-		/* @apply bg-gradient-to-r from-rose-400 to-orange-300 dark:bg-gradient-to-r dark:from-gray-700 dark:via-gray-900 dark:to-black; */
 		@apply bg-white;
 	}
 	.body {
