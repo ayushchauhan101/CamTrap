@@ -13,10 +13,14 @@
 
 @layer components {
 	.website {
-		@apply bg-blue-200;
+		/* @apply bg-gradient-to-r from-rose-400 to-orange-300 dark:bg-gradient-to-r dark:from-gray-700 dark:via-gray-900 dark:to-black; */
+		@apply bg-white;
 	}
 	.body {
-		@apply max-w-6xl mx-auto p-4 bg-slate-50 rounded-md;
+		@apply max-w-6xl mx-auto p-4 bg-slate-50/20 rounded-md my-5;
+	}
+	.footer {
+		@apply bg-inherit
 	}
 	.gallery {
 		@apply grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ;
