@@ -20,9 +20,9 @@ export default function Example() {
 			{({ open }) => (
 				<>
 					<motion.div
-						initial={{ scale: 0, y: -200 }}
-						animate={{ scale: 1, y: 0 }}
-						transition={{ type: "spring", ease: "linear", duration: 1 }}
+						initial={{ opacity:0.5}}
+						animate={{ opacity:1 }}
+						transition={{ type: "tween", ease: "easeInOut", duration: 1 }}
 						className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8"
 					>
 						<div className="relative flex h-16 items-center justify-between">
@@ -66,7 +66,10 @@ export default function Example() {
 								<div className="hidden sm:ml-6 sm:block">
 									<div className="flex space-x-4">
 										{navigation.map((item) => (
-											<a
+											<motion.a
+												initial={{opacity:0}}
+												animate={{opacity:1}}
+												transition={{duration:1}}
 												key={item.name}
 												href={item.href}
 												className={classNames(
@@ -78,7 +81,7 @@ export default function Example() {
 												aria-current={item.current ? "page" : undefined}
 											>
 												{item.name}
-											</a>
+											</motion.a>
 										))}
 									</div>
 								</div>
