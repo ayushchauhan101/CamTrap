@@ -32,7 +32,7 @@ function PrintImage() {
 				stiffness: 40,
 			}}
 		>
-			<motion.img src={image.link} alt={image.link} />
+			<motion.img src={image.link} />
 		</motion.div>
 	))
 }
