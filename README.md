@@ -8,7 +8,7 @@
 1. Vite
 ___
 - Download this project
-```
+```bash
 git clone <prject-name>
 cd <project-name>
 ```
