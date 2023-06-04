@@ -1,24 +1,24 @@
-import { useEffect, useState } from "react"
-import { motion } from "framer-motion"
+import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
-const url = import.meta.env.VITE_URL
+const url = import.meta.env.VITE_URL;
 
 function PrintImage() {
-	const [allImages, setAllImages] = useState([])
+	const [allImages, setAllImages] = useState([]);
 
 	useEffect(() => {
 		// api fetching function
 		async function fetchUsers() {
-			const response = await fetch(url)
+			const response = await fetch(url);
 			if (response.status === 200) {
-				const data = await response.json()
-				setAllImages(data)
+				const data = await response.json();
+				setAllImages(data);
 			} else {
-				throw new Error(`Request failed with status code ${response.status}`)
+				throw new Error(`Request failed with status code ${response.status}`);
 			}
 		}
-		fetchUsers()
-	}, [])
+		fetchUsers();
+	}, []);
 
 	return allImages.map((image, i) => (
 		<motion.div
@@ -32,9 +32,12 @@ function PrintImage() {
 				stiffness: 40,
 			}}
 		>
-			<motion.img src={image.link} />
+			<motion.img
+				src={image.link}
+				alt={image.title}
+			/>
 		</motion.div>
-	))
+	));
 }
 
 export default function Cards() {
@@ -44,5 +47,5 @@ export default function Cards() {
 				<PrintImage />
 			</div>
 		</div>
-	)
+	);
 }
