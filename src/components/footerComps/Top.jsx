@@ -2,7 +2,10 @@ export default function Top() {
 	return (
 		<div className="md:flex md:justify-between">
 			<div className="mb-6 md:mb-0">
-				<a href="" className="flex items-center">
+				<a
+					href=""
+					className="flex items-center"
+				>
 					<span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
 						Finstagram
 					</span>
@@ -15,7 +18,12 @@ export default function Top() {
 					</h2>
 					<ul className="text-gray-600 dark:text-gray-400 font-medium">
 						<li>
-							<a href="https://tailwindcss.com/" className="hover:underline">
+							<a
+								target="_blank"
+								rel="noreferrer"
+								href="https://tailwindcss.com/"
+								className="hover:underline"
+							>
 								Tailwind CSS
 							</a>
 						</li>
@@ -44,12 +52,22 @@ export default function Top() {
 					</h2>
 					<ul className="text-gray-600 dark:text-gray-400 font-medium">
 						<li className="mb-4">
-							<a href="#" className="hover:underline">
+							<a
+								target="_blank"
+								rel="noreferrer"
+								href="https://github.com/ayushchauhan101/CamTrap/blob/tmp/PrivacyPolicy.md"
+								className="hover:underline"
+							>
 								Privacy Policy
 							</a>
 						</li>
 						<li>
-							<a href="#" className="hover:underline">
+							<a
+								target="_blank"
+								rel="noreferrer"
+								href="https://github.com/ayushchauhan101/CamTrap/blob/tmp/PrivacyPolicy.md"
+								className="hover:underline"
+							>
 								Terms &amp; Conditions
 							</a>
 						</li>
@@ -57,5 +75,5 @@ export default function Top() {
 				</div>
 			</div>
 		</div>
-	)
+	);
 }

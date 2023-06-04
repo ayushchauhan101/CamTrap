@@ -1,9 +1,18 @@
 export default function Bottom() {
+	function getCurrentYear() {
+		const date = new Date();
+		const year = date.getFullYear();
+		return year;
+	}
+	const myYear = getCurrentYear();
 	return (
 		<div className="sm:flex sm:items-center sm:justify-between">
 			<span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
-				© 2023{" "}
-				<a href="" className="hover:underline">
+				©{myYear}{" "}
+				<a
+					href=""
+					className="hover:underline"
+				>
 					Finstagram™
 				</a>
 				. All Rights Reserved.
@@ -79,5 +88,5 @@ export default function Bottom() {
 				</a>
 			</div>
 		</div>
-	)
+	);
 }
