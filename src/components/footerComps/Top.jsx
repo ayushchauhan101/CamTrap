@@ -28,7 +28,9 @@ export default function Top() {
 					<ul className="text-gray-600 dark:text-gray-400 font-medium">
 						<li className="mb-4">
 							<a
-								href=""
+								target="_blank"
+								rel="noreferrer"
+								href="https://github.com/ayushchauhan101/CamTrap"
 								className="hover:underline "
 							>
 								Github
